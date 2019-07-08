@@ -1,0 +1,21 @@
+{
+  "name": "Polling-System",
+  "version": "1.0.0",
+  "description": "My dazzling Nuxt.js project",
+  "author": "poton8",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "ts-node": "^8.3.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "^2.8.1",
+    "nodemon": "^1.18.9"
+  }
+}
