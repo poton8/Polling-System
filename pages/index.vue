@@ -28,14 +28,18 @@
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang = 'ts'>
+import { Component, Vue } from 'vue-property-decorator'
 
-export default {
+@Component({
   components: {
-    Logo
+    Logo: () => import('~/components/Logo.vue')
   }
+})
+
+export default class indexPage extends Vue {
 }
+
 </script>
 
 <style>
