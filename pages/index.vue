@@ -7,6 +7,7 @@
       </h1>
       <h2 class="subtitle">
         My dazzling Nuxt.js project
+        <test />
       </h2>
       <div class="links">
         <a
@@ -30,10 +31,15 @@
 
 <script lang = 'ts'>
 import { Component, Vue } from 'vue-property-decorator'
-
 @Component({
   components: {
     Logo: () => import('~/components/Logo.vue')
+  }
+})
+
+@Component({
+  components:{
+    Test: () => import('~/components/Test.vue')
   }
 })
 
