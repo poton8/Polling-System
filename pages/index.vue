@@ -31,14 +31,10 @@
 
 <script lang = 'ts'>
 import { Component, Vue } from 'vue-property-decorator'
-@Component({
-  components: {
-    Logo: () => import('~/components/Logo.vue')
-  }
-})
 
 @Component({
   components:{
+    Logo: () => import('~/components/Logo.vue'),
     Test: () => import('~/components/Test.vue')
   }
 })

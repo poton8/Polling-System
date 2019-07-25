@@ -1,7 +1,7 @@
 <template>
-  <section class="container">
+  <section>
       <div>
-        <a-button >Primary</a-button>
+        <a-button>Primary</a-button>
       </div>
   </section>
 </template>
@@ -9,10 +9,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
-import { Tag } from 'ant-design-vue'
+import { Button } from 'ant-design-vue'
 
-@Component
+@Component({
+  components:{
+    'a-button' : Button
+  }
+
+})
 export default class Test extends Vue {
-    'a-button' : Tag
 }
 </script>
